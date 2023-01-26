@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.form-inline {
+    margin-right: auto;
+}
+
+.navbar i{
+    margin-left:20px;
+}
+.leveled{
+    margin-top: 5%;
+    
+}
