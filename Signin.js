@@ -19,6 +19,8 @@ $(document).ready(function () {
       let jsondata = {
         "email": loginemail,
         "password": loginpassword,
+        "admin" : admincheck,
+        "customer": customercheck,
       };
 
       let settings = {
@@ -60,34 +62,18 @@ $(document).ready(function () {
         let emailcheck = document.getElementById("contact-email").value;
         let passwordcheck = document.getElementById("contact-password").value;
 
-  
-        for (var i = 0; i < response.length && i < limit; i++) {
-          if (emailcheck == response[i].email){
-            console.log(emailcheck);
-            if(passwordcheck == response[i].password){
-              console.log(passwordcheck);
+      
+          for (var i = 0; i < response.length && i < limit; i++) {
+            if (emailcheck == response[i].email && passwordcheck == response[i].password && response[i].customer === true){
               window.location.href = "homepage.html";
-            }
+              } 
+            else if(emailcheck == response[i].email && passwordcheck == response[i].password && response[i].admin === true){
+              window.location.href = "admin.html";
+            };
+            
           }
-          //console.log(response[i]);
-          //[METHOD 1]
-          //let's run our loop and slowly append content
-          //we can use the normal string append += method
-          /*
-          content += "<tr><td>" + response[i].name + "</td>" +
-            "<td>" + response[i].email + "</td>" +
-            "<td>" + response[i].message + "</td>
-            "<td>Del</td><td>Update</td</tr>";
-  
-        }
-  
-        //[STEP 9]: Update our HTML content
-        //let's dump the content into our table body
-        $("#contact-list tbody").html(content);
-  
-        $("#total-contacts").html(response.length);
-      });
-  
-  
+      }
+      )
     }
-  */}})}})
+  }
+)
