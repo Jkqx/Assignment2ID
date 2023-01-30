@@ -1,7 +1,7 @@
 //[STEP 0]: Make sure our document is A-OK
 $(document).ready(function () {
     //what kind of interface we want at the start 
-    const APIKEY = "63d3e5553bc6b255ed0c437d"; 
+    const APIKEY = "63d7a9893bc6b255ed0c447f"; 
     //[STEP 1]: Create our submit form listener
     $("#contact-signin").on("click", function (e) {
       //prevent default action of the button 
@@ -13,6 +13,8 @@ $(document).ready(function () {
       //you are to do your own data validation
       let loginemail = $("contact-email").val();
       let loginpassword = $("#contact-password").val();
+      let admincheck = $("#contact-admincheck").val();
+      let customercheck = $("#contact-customercheck").val();
       
       //[STEP 3]: get form values when user clicks on send
       //Adapted from restdb api
@@ -26,7 +28,7 @@ $(document).ready(function () {
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://ecommerce-cc5d.restdb.io/rest/signin",
+        "url": "https://websites-1948.restdb.io/rest/login-information",
         "method": "GET", 
         "headers": {
           "content-type": "application/json",
@@ -45,7 +47,7 @@ $(document).ready(function () {
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://ecommerce-cc5d.restdb.io/rest/signin",
+        "url": "https://websites-1948.restdb.io/rest/login-information",
         "method": "GET", //[cher] we will use GET to retrieve info
         "headers": {
           "content-type": "application/json",
@@ -61,6 +63,7 @@ $(document).ready(function () {
         //check the what the "i" is for debugs.
         let emailcheck = document.getElementById("contact-email").value;
         let passwordcheck = document.getElementById("contact-password").value;
+        let admincheck = "admin";
 
       
           for (var i = 0; i < response.length && i < limit; i++) {
