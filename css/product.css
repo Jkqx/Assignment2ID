@@ -59,23 +59,43 @@ a:hover {
 }
 
 .section-products #product-1 .part-1::before {
-    background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
+    background: url("https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/423527/item/goods_09_423527.jpg?width=750") no-repeat center;
     background-size: cover;
 		transition: all 0.3s;
 }
 
 .section-products #product-2 .part-1::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
+    background: url("https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/447179/item/goods_58_447179.jpg?width=750") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-3 .part-1::before {
-    background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
+    background: url("https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/449631/item/goods_30_449631.jpg?width=750") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-4 .part-1::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
+    background: url("https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/456272/item/goods_31_456272.jpg?width=750") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/458115/item/goods_12_458115.jpg?width=750") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/452928/item/goods_12_452928.jpg?width=750") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/452548/item/goods_09_452548.jpg?width=750") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-8 .part-1::before {
+    background: url("https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/444616/item/goods_66_444616.jpg?width=750") no-repeat center;
     background-size: cover;
 }
 
