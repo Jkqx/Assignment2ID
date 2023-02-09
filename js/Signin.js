@@ -43,7 +43,9 @@ $(document).ready(function () {
             window.location.href = "navigation.html";
             } 
           else if(emailcheck == response[i].email && passwordcheck == response[i].password && response[i].admin === true){
+
             window.location.href = "admin.html";
+            localStorage.setItem('loginname',response[i].name);
           };
           
         }
