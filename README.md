@@ -1,19 +1,22 @@
 # Ecommerce Website
-Languages: HTML, CSS, Javascript,ReactJs. 
-
-Database: Restful DB 
-
-Pages: 
-
-Homepage 
-
-Account Page 
-
-Edit Profile Page 
-
-Admin Page 
-
 Trying to go for a minimal and sleek design. 
+
+
+#Languages: 
+-HTML
+-CSS
+-Javascript
+-ReactJs
+
+#Database: 
+Restful DB 
+
+#Pages: 
+-Homepage 
+-User Page
+-Admin Page 
+
+
 
 #Ideas: 
 
