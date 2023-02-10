@@ -1,28 +1,26 @@
-# Ecommerce Website                                                                                  Made By:Julius Keong Qixiang & Chong Chern Shee Edison
-Trying to go for a minimal and sleek design. 
+# Ecommerce Website                                                                 Made By:Julius Keong Qixiang & Chong Chern Shee Edison
+While coming up with ideas on making a website, we decided to go for an Ecommerce website theme. We will be designing a small Ecommerce website based for a start-up.
 
+# Languages:
+- HTML
+- CSS
+- Javascript
 
-#Languages: 
--HTML
--CSS
--Javascript
--ReactJs
+# Database: 
+- Restful DB 
 
-#Database: 
-Restful DB 
-
-#Pages: 
--Homepage 
--User Page
--Admin Page 
+# Pages: 
+- Homepage 
+- User Page
+- Admin Page 
 
 
 
-Ideas: 
+# Questions we ask: 
 
 Product:  Clothing Apparel (Casual wear & Fashion) 
 
-Basic Homepage of E-commerce site: 
+# Basic Homepage of E-commerce site: 
 
 What do users want to see in homepage? 
 
@@ -32,72 +30,45 @@ New releases
 
 Upcoming releases 
 
-Login Page: 
-
+# Login Page: 
 Login UI consisting of email and password 
-
 Login “Email” or “Username” will automatically bring the user to either the admin page or the customer page. (Database helps sift through whether email provided is a admin or customer) 
 
-Navigation bar: 
-
-Dropdown of different clothing filters 
-
-Bring user to different pages 
-
-Logo at top left  
-
-Navigation bar (Mobile): 
-
-Hamburger Menu 
-
-Logo at Center of the navbar (position: absolute) 
+# Navigation bar:  
+-Bring user to different pages 
+-Logo at top left  
+# Navigation bar (Mobile): 
+-Hamburger Menu 
+-Logo at Center of the navbar (position: absolute) 
 
  
 
  
 
-Store Page: 
-
-Items and pictures 
-
-Prices and discounts 
+# Store Page: 
+- Items and pictures 
+- Prices and discounts 
 
 
-Account page:  
+# Account page:  
+-Order status 
+-Order history 
+-Cart 
+-Edit profile 
+-Username 
+-Password 
+-Phone Number 
+-Address (Delivery) 
 
-Order status 
-
-Order history 
-
-Cart 
-
-Edit profile 
-
-Username 
-
-Password 
-
-Phone Number 
-
-Address (Delivery) 
-
-Admin page:  
+# Admin page:  
 
 Login UI consisting of email and password 
 
-Admin are also able to add and delete user page? (HTML: CSS:  
-
-Statistics of Items sold 
-
-Able to show the months and date of sale. 
-
-Able to show which categories for clothing has the most sale. 
-
-Shoes the latest transaction 
+Admin are also able to add and delete users? 
 
  
 
-Unique Points:
+# Unique Points:
 
 Slider on homepage 
 Discounts on homepage
@@ -111,7 +82,7 @@ Search bar
 
  
 
-Logo and Name design: 
+# Logo and Name prototype design: 
 
 "Meridian Styles" - evokes the idea of a line connecting different styles, representing the brand as a hub of diverse and unique fashion styles.  
 
