@@ -40,7 +40,7 @@ $(document).ready(function () {
             console.log(response[i].name)
             
             document.getElementById("profile").innerHTML = "Welcome, " + response[i].name;
-            window.location.href = "navigation.html";
+            window.location.href = "customer.html";
             } 
           else if(emailcheck == response[i].email && passwordcheck == response[i].password && response[i].admin === true){
 
