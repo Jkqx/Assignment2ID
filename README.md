@@ -1,4 +1,4 @@
-# Ecommerce Website
+# Ecommerce Website                                                                                  Made By:Julius Keong Qixiang & Chong Chern Shee Edison
 Trying to go for a minimal and sleek design. 
 
 
@@ -18,9 +18,9 @@ Restful DB
 
 
 
-#Ideas: 
+Ideas: 
 
-Product:  Clothing Apparel (Casual wear & Fashion) (Sportswear On-hold) 
+Product:  Clothing Apparel (Casual wear & Fashion) 
 
 Basic Homepage of E-commerce site: 
 
@@ -62,7 +62,6 @@ Items and pictures
 
 Prices and discounts 
 
-Sorting feature etc by price, release date 
 
 Account page:  
 
@@ -79,10 +78,6 @@ Username
 Password 
 
 Phone Number 
-
-Gender (Recommend Gender related apparels in their homepage)( Advanced)(Optional)(The checkbox for gender will be default to their specific gender however they can uncheck it and check others. Basically, we using profile setting as a default point) 
-
-DOB	(Recommend Certain apparels for them) 
 
 Address (Delivery) 
 
@@ -102,19 +97,13 @@ Shoes the latest transaction
 
  
 
-Unique Points 
+Unique Points:
 
-Implement point system which users can use to redeem points.  
+Slider on homepage 
+Discounts on homepage
+World map
+Search bar
 
-Users gain additional points for cashback.(Mcdonald App loyalty system) 
-
-Gamify: Wheel of fortune if spend at least 15 mins scrolling in the app. 
-
-Log-in Bonus: Give them a scratch card for log-in.(rewards) 
-
-Products Recommendation caters to customers based on their age group located on their profile settings. 
-
-Through asking for customers body specification and theme for their clothing, We can recommend them clothing apparrels for them. Each clothes have their own tags.(E.g, Minimalism, Trendy, Japanese style)(5*) 
 
  
 
@@ -137,6 +126,7 @@ Logo: Globe with lines? And Fashion from different culture?
 "Nomad Apparels" - evokes the idea of travellers and wanderers, representing the brand as offering a curated collection of clothing that is versatile and adaptable to different styles and cultures. 
 
 "Echo Collections" - evokes the idea of reflections and repetition, representing the brand as offering a collection of timeless, iconic fashion trends and styles that come back in style. 
+
 
 Design Inspiration: 
 
