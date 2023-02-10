@@ -17,7 +17,7 @@ $(document).ready(function () {
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://ecommerce-cc5d.restdb.io/rest/login",
+      "url": "https://ecommerce-cc5d.restdb.io/rest/contact",
       "method": "GET", //[cher] we will use GET to retrieve info
       "headers": {
         "content-type": "application/json",

@@ -27,10 +27,11 @@ $(document).ready(function () {
     let createPassword = $("#create-password").val();
     let createCustomer = $("#create-customer").val();
     let createAddress = $("#create-address").val();
-    let createPhone = $("#create-phone").val();
     let createGender = $("#create-gender").val();
+    let createpoint = 0
     
     
+       
 
     //[STEP 3]: get form values when user clicks on send
     //Adapted from restdb api
@@ -40,16 +41,16 @@ $(document).ready(function () {
       "password": createPassword,
       "customer": createCustomer,
       "address": createAddress,
-      "phone": createPhone,
       "gender": createGender,
+      "points": createpoint,
       
     };
-
+    
     //[STEP 4]: Create our AJAX settings. Take note of API key
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://ecommerce-cc5d.restdb.io/rest/customer",
+      "url": "https://ecommerce-cc5d.restdb.io/rest/contact",
       "method": "POST", 
       "headers": {
         "content-type": "application/json",
@@ -72,23 +73,21 @@ $(document).ready(function () {
       console.log(response);
       
       $("#create-submit").prop( "disabled", false);
-
       //update our table 
       getContacts();
     });
+
+    
+
   });//end click 
 
-
-  //[STEP] 6
-  //let's create a function to allow you to retrieve all the information in your contacts
-  //by default we only retrieve 10 results
   function getContacts(limit = 40, all = true) {
 
     //[STEP 7]: Create our AJAX settings
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://ecommerce-cc5d.restdb.io/rest/customer",
+      "url": "https://ecommerce-cc5d.restdb.io/rest/contact",
       "method": "GET", //[cher] we will use GET to retrieve info
       "headers": {
         "content-type": "application/json",
@@ -107,8 +106,11 @@ $(document).ready(function () {
       for (var i = 0; i < response.length && i < limit; i++) {
         console.log(i)
         content = `${content}<tr id='${response[i]._id}'><td>${response[i].name}</td>
+        <td>${response[i].points}</td>
         <td>${response[i].email}</td>
         <td>${response[i].password}</td>
+        <td>${response[i].address}</td>
+        <td>${response[i].gender}</td>
         <td><a href='#contact-list' class='delete' data-id='${response[i]._id}'>Del</a></td>
         <td><a href='#update-contact' class='update' data-id='${response[i]._id}' data-name='${response[i].name}' data-email='${response[i].email}' data-password ='${response[i].password}'>Update</a></td></tr>`;
         contactcount += 1;
@@ -165,7 +167,7 @@ $(document).ready(function () {
       var settings = {
         "async": true,
         "crossDomain": true,
-        "url": `https://ecommerce-cc5d.restdb.io/rest/customer/${id}`,//update based on the ID
+        "url": `https://ecommerce-cc5d.restdb.io/rest/contact/${id}`,//update based on the ID
         "method": "PUT",
         "headers": {
           "content-type": "application/json",
@@ -202,7 +204,7 @@ $(document).ready(function () {
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": `https://ecommerce-cc5d.restdb.io/rest/customer/${id}`,
+      "url": `https://ecommerce-cc5d.restdb.io/rest/contact/${id}`,
       "method": "DELETE",
       "headers": {
         "content-type": "application/json",
@@ -215,37 +217,6 @@ $(document).ready(function () {
     });   
   }
   
-  function deleteRecord(id) {
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": `https://ecommerce-cc5d.restdb.io/rest/login/${id}`,
-      "method": "DELETE",
-      "headers": {
-        "content-type": "application/json",
-        "x-apikey": APIKEY,
-        "cache-control": "no-cache"
-      },
-    };
-    $.ajax(settings).done(function (response){
-      console.log(response);
-    });   
-  }
+  
 
-  function deleteRecord2(id) {
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": `https://websites-1948.restdb.io/rest/login-information/${id}`,
-      "method": "DELETE",
-      "headers": {
-        "content-type": "application/json",
-        "x-apikey": APIKEY,
-        "cache-control": "no-cache"
-      },
-    };https://ecommerce-cc5d.restdb.io/rest/customer  
-    $.ajax(settings).done(function (response){
-      console.log(response);
-    });   
-  }
 }})
